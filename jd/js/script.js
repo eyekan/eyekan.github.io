@@ -150,7 +150,7 @@ window.onscroll=function(){
 
 
 
-
+//京东广告
 var ad=document.querySelector(".ad");
 var close=document.querySelector("#close");
 if(sessionStorage.ad=="false"){
@@ -162,4 +162,3 @@ close.onclick=function(){
     ad.style.display="none";
     sessionStorage.ad="false";
 }
-
