@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body,img,tr,td,table{
+            padding: 0;
+            margin: 0;
+        }
+        table{
+            margin: 0 auto;
+            border: 2px solid #000;
+            border-spacing: 10px;
+            padding: 50px 50px;
+            margin-top: 50px;
+        }
+        td{
+            border: 2px solid #000;
+        }
+        .btn{
+            border: none;
+        }
+        .denglu a{
+            background-image: linear-gradient(-180deg,#efdea8 3%,#e3c689 100%);
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+            border-radius: 10px;
+            width: 320px;
+            height: 125px;
+            margin: 0 auto;
+            font-size: 66px;
+            color: #000;
+            text-align: center;
+            line-height: 125px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .denglu{
+            
+            padding-top: 100px;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <table>
+        <tr>
+            <td class="td img1"><img src="images/img1.jpg" alt=""></td>
+            <td class="td img2"><img src="images/img2.jpg" alt=""></td>
+            <td class="td img3"><img src="images/img3.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td class="td img4"><img src="images/img4.jpg" alt=""></td>
+            <td class="btn"><img src="images/btn.jpg" alt=""></td>
+            <td class="td img5"><img src="images/img1.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td class="td img6"><img src="images/img2.jpg" alt=""></td>
+            <td class="td img7"><img src="images/img3.jpg" alt=""></td>
+            <td class="td img8"><img src="images/img4.jpg" alt=""></td>
+        </tr>
+    </table>
+    
+    
+    <div class="denglu"><a href="../me.html">登录</a></div>
+    
+    
+    
+    
+    <script>
+        var arr=[".img1",".img2",".img3",".img5",".img8",".img7",".img6",".img4"];
+        var t;
+        var tds=document.querySelectorAll(".td");
+        var btn=document.querySelector(".btn");
+        var num=0;
+        btn.onclick=function(){
+            var n=0;
+            var sum=Math.floor(12+Math.random()*tds.length); 
+            function fun(){
+                if(num===11){
+                    return;
+                }
+                if(num===tds.length)
+                {
+                    num=0
+                }
+                var arr1 = document.querySelector(arr[num]);
+                arr1.style.border="solid red 2px";
+                var previous="";
+                if(num===0){
+                    previous=tds.length-1
+                }else{
+                    previous=num-1
+                }
+                var arr2 = document.querySelector(arr[previous]);
+                arr2.style.border="#000 solid 2px";
+                num++;
+                n++;
+                }
+                t=setInterval (function(){
+                    fun();
+                    if(sum===n){
+                        clearInterval(t);
+                        alert("恭喜获得1000元无门槛红包，登录立即领取");
+                    }
+                },200);
+        }
+//        function stop(){
+//            clearInterval(t);
+//        }
+//        setTimeout(stop,sum*1000);
+    </script>
+</body>
+</html>

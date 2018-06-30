@@ -1,0 +1,16 @@
+////document.documentElement.clientHeight    document.documentElement.clientHeight+"px"
+
+//ªÒ»°∏ﬂ
+var cmaincol3=document.querySelector(".classify .main .col-xs-3");
+var cmaincol9=document.querySelector(".classify .main .col-xs-9");
+var html=document.querySelector("html");
+var cmc3=html.clientHeight+"px";
+if(cmaincol3!=null){
+cmaincol3.style.height=cmc3;
+cmaincol3.style.overflow="scroll";
+console.log(cmc3);}
+var cmc9=html.clientHeight+"px";
+if(cmaincol9!=null){
+cmaincol9.style.height=cmc9;
+cmaincol9.style.overflow="scroll";
+}

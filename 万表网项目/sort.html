@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>分类</title>
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body class="sort">
+    <!--   全网站底部导航条-->
+    <nav>
+        <ul class="clearfix">
+            <li><a href="index.html"><i class="fa fa-home"></i><span>首页</span></a></li>
+            <li><a href="sort.html" class="active"><i class="fa fa-list"></i><span>分类</span></a></li>
+            
+            <li><a href="cart.html"><i class="fa fa-shopping-cart"></i><span>购物车</span></a></li>
+            <li><a href="me.html"><i class="fa fa-user-o"></i><span>我的</span></a></li>
+        </ul>
+    </nav>
+<!--    头部广告-->
+    <div class="ad clearfix">
+        <div class="one">
+            <span id="close">X</span>
+        </div>
+        <div class="two">
+            <p>新用户福利</p>
+            <h4>注册送50元现金券</h4>
+        </div>
+        <div class="tree">
+            <a href="">立即领取</a>
+        </div>
+    </div>
+<!--    搜索条-->
+    <div class="search clearfix">
+        
+        <div class="center">
+            <i class="fa fa-search"></i>
+            
+            <input type="text" placeholder="搜索商品">
+        </div>
+        
+    </div>
+<!--    主题内容-->
+    <div class="main">
+        <div>
+            <div class="row zhuti">
+                <div class="col-xs-3">
+                    <ul>
+                        <li class="active">推荐</li>
+                        <li>顶级品牌</li>
+                        <li>奢华品牌</li>
+                        <li>轻奢品牌</li>
+                        <li>时尚潮牌</li>
+                        <li>智能 国产</li>
+                        <li>表带</li>
+                    </ul>
+                </div>
+                <div class="col-xs-9">
+                   <div class="box">
+                    <div id="sortapp">
+                        <div v-for="arr in arrs">
+                            <a href=""><img :src="arr.img" alt=""></a>
+                            <p class="tit">{{arr.p}}</p>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img1" alt="">
+                                    <p>{{arr.p1}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img2" alt="">
+                                    <p>{{arr.p2}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img3" alt="">
+                                    <p>{{arr.p3}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img4" alt="">
+                                    <p>{{arr.p4}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img5" alt="">
+                                    <p>{{arr.p5}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img6" alt="">
+                                    <p>{{arr.p6}}</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="tit">{{arr.p0}}</p>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img7" alt="">
+                                    <p>{{arr.p7}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img8" alt="">
+                                    <p>{{arr.p8}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img9" alt="">
+                                    <p>{{arr.p9}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img10" alt="">
+                                    <p>{{arr.p10}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img11" alt="">
+                                    <p>{{arr.p11}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img12" alt="">
+                                    <p>{{arr.p12}}</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="tit">{{arr.pa}}</p>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img13" alt="">
+                                    <p>{{arr.p13}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img14" alt="">
+                                    <p>{{arr.p14}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img15" alt="">
+                                    <p>{{arr.p15}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img16" alt="">
+                                    <p>{{arr.p16}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img17" alt="">
+                                    <p>{{arr.p17}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img18" alt="">
+                                    <p>{{arr.p18}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img18" alt="">
+                                    <p>{{arr.p19}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img18" alt="">
+                                    <p>{{arr.p20}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img18" alt="">
+                                    <p>{{arr.p21}}</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="box">
+                    <div id="sortapps">
+                        <div v-for="arr in arrs">
+                            <a href=""><img :src="arr.img" alt=""></a>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img1" alt="">
+                                    <p>{{arr.p1}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img2" alt="">
+                                    <p>{{arr.p2}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img3" alt="">
+                                    <p>{{arr.p3}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img4" alt="">
+                                    <p>{{arr.p4}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img5" alt="">
+                                    <p>{{arr.p5}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img6" alt="">
+                                    <p>{{arr.p6}}</p>
+                                    </a>
+                                </div>
+                            
+                            
+                            
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img7" alt="">
+                                    <p>{{arr.p7}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img8" alt="">
+                                    <p>{{arr.p8}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img9" alt="">
+                                    <p>{{arr.p9}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img10" alt="">
+                                    <p>{{arr.p10}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img11" alt="">
+                                    <p>{{arr.p11}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img12" alt="">
+                                    <p>{{arr.p12}}</p>
+                                    </a>
+                                </div>
+                            
+                            
+                            
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img13" alt="">
+                                    <p>{{arr.p13}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img14" alt="">
+                                    <p>{{arr.p14}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img15" alt="">
+                                    <p>{{arr.p15}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img16" alt="">
+                                    <p>{{arr.p16}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img17" alt="">
+                                    <p>{{arr.p17}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img18" alt="">
+                                    <p>{{arr.p18}}</p>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="box">
+                    <div id="sortappa">
+                        <div v-for="arr in arrs">
+                            <a href=""><img :src="arr.img" alt=""></a>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img1" alt="">
+                                    <p>{{arr.p1}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img2" alt="">
+                                    <p>{{arr.p2}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img3" alt="">
+                                    <p>{{arr.p3}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img4" alt="">
+                                    <p>{{arr.p4}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img5" alt="">
+                                    <p>{{arr.p5}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img6" alt="">
+                                    <p>{{arr.p6}}</p>
+                                    </a>
+                                </div>
+                            
+                            
+                            
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img7" alt="">
+                                    <p>{{arr.p7}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img8" alt="">
+                                    <p>{{arr.p8}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img9" alt="">
+                                    <p>{{arr.p9}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img10" alt="">
+                                    <p>{{arr.p10}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img11" alt="">
+                                    <p>{{arr.p11}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img12" alt="">
+                                    <p>{{arr.p12}}</p>
+                                    </a>
+                                </div>
+                            
+                            
+                            
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img13" alt="">
+                                    <p>{{arr.p13}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img14" alt="">
+                                    <p>{{arr.p14}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img15" alt="">
+                                    <p>{{arr.p15}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img16" alt="">
+                                    <p>{{arr.p16}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img17" alt="">
+                                    <p>{{arr.p17}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img18" alt="">
+                                    <p>{{arr.p18}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img19" alt="">
+                                    <p>{{arr.p19}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img20" alt="">
+                                    <p>{{arr.p20}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img21" alt="">
+                                    <p>{{arr.p21}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img22" alt="">
+                                    <p>{{arr.p22}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img23" alt="">
+                                    <p>{{arr.p23}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img24" alt="">
+                                    <p>{{arr.p24}}</p>
+                                    </a>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="box">
+                    <div id="sortappb">
+                        <div v-for="arr in arrs">
+                            <a href=""><img :src="arr.img" alt=""></a>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img1" alt="">
+                                    <p>{{arr.p1}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img2" alt="">
+                                    <p>{{arr.p2}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img3" alt="">
+                                    <p>{{arr.p3}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img4" alt="">
+                                    <p>{{arr.p4}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img5" alt="">
+                                    <p>{{arr.p5}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img6" alt="">
+                                    <p>{{arr.p6}}</p>
+                                    </a>
+                                </div>
+                            
+                            
+                            
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img7" alt="">
+                                    <p>{{arr.p7}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img8" alt="">
+                                    <p>{{arr.p8}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img9" alt="">
+                                    <p>{{arr.p9}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img10" alt="">
+                                    <p>{{arr.p10}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img11" alt="">
+                                    <p>{{arr.p11}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img12" alt="">
+                                    <p>{{arr.p12}}</p>
+                                    </a>
+                                </div>
+                            
+                            
+                            
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img13" alt="">
+                                    <p>{{arr.p13}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img14" alt="">
+                                    <p>{{arr.p14}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img15" alt="">
+                                    <p>{{arr.p15}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img16" alt="">
+                                    <p>{{arr.p16}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img17" alt="">
+                                    <p>{{arr.p17}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img18" alt="">
+                                    <p>{{arr.p18}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img19" alt="">
+                                    <p>{{arr.p19}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img20" alt="">
+                                    <p>{{arr.p20}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img21" alt="">
+                                    <p>{{arr.p21}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img22" alt="">
+                                    <p>{{arr.p22}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img23" alt="">
+                                    <p>{{arr.p23}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img24" alt="">
+                                    <p>{{arr.p24}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img25" alt="">
+                                    <p>{{arr.p25}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img26" alt="">
+                                    <p>{{arr.p26}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img27" alt="">
+                                    <p>{{arr.p27}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img28" alt="">
+                                    <p>{{arr.p28}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img29" alt="">
+                                    <p>{{arr.p29}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img30" alt="">
+                                    <p>{{arr.p30}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img31" alt="">
+                                    <p>{{arr.p31}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img32" alt="">
+                                    <p>{{arr.p32}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img33" alt="">
+                                    <p>{{arr.p33}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img34" alt="">
+                                    <p>{{arr.p34}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img35" alt="">
+                                    <p>{{arr.p35}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img36" alt="">
+                                    <p>{{arr.p36}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img37" alt="">
+                                    <p>{{arr.p37}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img38" alt="">
+                                    <p>{{arr.p38}}</p>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="box">
+                    <div id="sortappc">
+                        <div v-for="arr in arrs">
+                            <a href=""><img :src="arr.img" alt=""></a>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img1" alt="">
+                                    <p>{{arr.p1}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img2" alt="">
+                                    <p>{{arr.p2}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img3" alt="">
+                                    <p>{{arr.p3}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img4" alt="">
+                                    <p>{{arr.p4}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img5" alt="">
+                                    <p>{{arr.p5}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img6" alt="">
+                                    <p>{{arr.p6}}</p>
+                                    </a>
+                                </div>
+                            
+                            
+                            
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img7" alt="">
+                                    <p>{{arr.p7}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img8" alt="">
+                                    <p>{{arr.p8}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img9" alt="">
+                                    <p>{{arr.p9}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img10" alt="">
+                                    <p>{{arr.p10}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img11" alt="">
+                                    <p>{{arr.p11}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img12" alt="">
+                                    <p>{{arr.p12}}</p>
+                                    </a>
+                                </div>
+                            
+                            
+                            
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img13" alt="">
+                                    <p>{{arr.p13}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img14" alt="">
+                                    <p>{{arr.p14}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img15" alt="">
+                                    <p>{{arr.p15}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img16" alt="">
+                                    <p>{{arr.p16}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img17" alt="">
+                                    <p>{{arr.p17}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img18" alt="">
+                                    <p>{{arr.p18}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img19" alt="">
+                                    <p>{{arr.p19}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img20" alt="">
+                                    <p>{{arr.p20}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img21" alt="">
+                                    <p>{{arr.p21}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img22" alt="">
+                                    <p>{{arr.p22}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img23" alt="">
+                                    <p>{{arr.p23}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img24" alt="">
+                                    <p>{{arr.p24}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img25" alt="">
+                                    <p>{{arr.p25}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img26" alt="">
+                                    <p>{{arr.p26}}</p>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="box">
+                    <div id="sortappd">
+                        <div v-for="arr in arrs">
+                            <a href=""><img :src="arr.img" alt=""></a>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img1" alt="">
+                                    <p>{{arr.p1}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img2" alt="">
+                                    <p>{{arr.p2}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img3" alt="">
+                                    <p>{{arr.p3}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img4" alt="">
+                                    <p>{{arr.p4}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img5" alt="">
+                                    <p>{{arr.p5}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img6" alt="">
+                                    <p>{{arr.p6}}</p>
+                                    </a>
+                                </div>
+                            
+                            
+                            
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img7" alt="">
+                                    <p>{{arr.p7}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img8" alt="">
+                                    <p>{{arr.p8}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img9" alt="">
+                                    <p>{{arr.p9}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img10" alt="">
+                                    <p>{{arr.p10}}</p>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="box">
+                    <div id="sortappe">
+                        <div v-for="arr in arrs">
+                            <a href=""><img :src="arr.img" alt=""></a>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img1" alt="">
+                                    <p>{{arr.p1}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img2" alt="">
+                                    <p>{{arr.p2}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img3" alt="">
+                                    <p>{{arr.p3}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img4" alt="">
+                                    <p>{{arr.p4}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img5" alt="">
+                                    <p>{{arr.p5}}</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="">
+                                    <img :src="arr.img6" alt="">
+                                    <p>{{arr.p6}}</p>
+                                    </a>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    <!--    为你推荐-->
+    <div class="weini">
+        <div class="text-center">
+            <h3>——为你推荐——</h3>
+        </div>
+<!--        后台执行-->
+        <div id="app">
+            <div class="row">
+                <div class="col-xs-6" v-for="arr in arrs">
+                    <a href="">
+                        <img :src="arr.img" alt="">
+                        <p class="price">{{arr.price}}</p>
+                        <p class="del"><del>{{arr.del}}</del></p>
+                    </a>
+
+                </div>
+            </div>
+    </div>  
+    </div> 
+    
+               
+               
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--    返回顶部-->
+    <div id="top" class="top"></div>
+    
+    
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+    <script src="js/swiper-4.2.6.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

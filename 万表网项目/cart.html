@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>分类</title>
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body class="cart">
+    <!--   全网站底部导航条-->
+    <nav>
+        <ul class="clearfix">
+            <li><a href="index.html"><i class="fa fa-home"></i><span>首页</span></a></li>
+            <li><a href="sort.html"><i class="fa fa-list"></i><span>分类</span></a></li>
+           
+            <li><a href="cart.html" class="active"><i class="fa fa-shopping-cart"></i><span>购物车</span></a></li>
+            <li><a href="me.html"><i class="fa fa-user-o"></i><span>我的</span></a></li>
+        </ul>
+    </nav>
+<!--    头部广告-->
+    <div class="ad clearfix">
+        <div class="one">
+            <span id="close">X</span>
+        </div>
+        <div class="two">
+            <p>新用户福利</p>
+            <h4>注册送50元现金券</h4>
+        </div>
+        <div class="tree">
+            <a href="">立即领取</a>
+        </div>
+    </div>
+<!--    购物车横幅-->
+   <div class="car">
+       <h3>购物车</h3>
+   </div>
+    
+<!--    main-->
+    <div class="main text-center">
+        <p class="pp">登录后购物车的商品将保存到您账号中，<a href="me.html">现在登录</a></p>
+        <div class="go">
+            <div class="fa fa-shopping-cart"></div>
+            <p>购物车是空的</p>
+        </div>
+        <ul class="clearfix">
+            <li><a href="index.html" class="active">逛逛首页</a></li>
+            <li><a href="me.html">查看收藏</a></li>
+        </ul>
+    </div>      
+    
+    <!--    为你推荐-->
+    <div class="weini">
+        <div class="text-center">
+            <h3>——为你推荐——</h3>
+        </div>
+<!--        后台执行-->
+        <div id="app">
+            <div class="row">
+                <div class="col-xs-6" v-for="arr in arrs">
+                    <a href="">
+                        <img :src="arr.img" alt="">
+                        <p class="price">{{arr.price}}</p>
+                        <p class="del"><del>{{arr.del}}</del></p>
+                    </a>
+
+                </div>
+            </div>
+    </div>  
+    </div> 
+<!--    优惠-->
+    <div class="you">
+        <a href="dianji/index.html"><img src="images/youhui.jpg" alt=""></a>
+    </div>
+
+    <!--    返回顶部-->
+    <div id="top" class="top"></div>
+    
+    
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+    <script src="js/swiper-4.2.6.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
