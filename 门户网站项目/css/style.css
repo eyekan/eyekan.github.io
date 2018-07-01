@@ -490,6 +490,7 @@ banner img{
 .plan_title a {
     color: #666;
     padding: 26px 0px; 
+    text-decoration: none;
 }
 .plan_title a.tab-now {
     color: #f07203;
@@ -503,9 +504,6 @@ banner img{
     color: #333;
     line-height: 42px;
     font-weight: bold;
-    text-decoration: none;
-}
-.news .contact .n_bottom span a{
     text-decoration: none;
 }
 .news .contact .listInfo p,.news .contact .n_bottom span a,.news .contact .n_bottom span {

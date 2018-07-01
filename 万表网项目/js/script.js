@@ -8,7 +8,7 @@ $("#top").click(function(){
 //.search 顶部搜索条滚动到一定距离变的功能
 window.onscroll = function(){
     if(document.querySelector(".search")!==null){
-    if(document.body.scrollTop>60){
+    if(document.body.scrollTop>60 || document.documentElement.scrollTop>60){
        
         document.querySelector(".search").style.top = "0";
         document.querySelector(".sort .main .zhuti .col-xs-3").style.top = "60px";
